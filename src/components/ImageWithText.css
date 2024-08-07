@@ -1,0 +1,45 @@
+/* ./Components/ImageWithText.css */
+
+.image-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden; /* Ensure content doesn't overflow */
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Parallax effect */
+    transform: translateZ(0);
+    will-change: transform;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .image-container:hover .image {
+    transform: scale(1.1); /* Adjust the scale value as needed */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    font-size: 1.5em; /* Adjust as needed */
+  }
+  

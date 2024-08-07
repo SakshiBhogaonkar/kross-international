@@ -1,0 +1,39 @@
+/* ./Components/TextAndScrollSection.css */
+
+.section-container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .text-only {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Text color */
+  }
+  
+  .scrollable-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 400px; /* Adjust as needed */
+    background-color: #fff; /* Background color */
+    border-left: 1px solid #ddd; /* Separator line */
+  }
+  
+  .scrollable-content h2 {
+    margin-top: 0;
+  }
+  
+  .scrollable-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .scrollable-content p {
+    margin-bottom: 10px;
+  }
+  
